@@ -11,7 +11,8 @@ import SwiftUI
 struct XibaarApp: App {
     var body: some Scene {
         WindowGroup {
-            NewsListView()
+            ContentView()
+                .environmentObject(NewsViewModel())
         }
     }
 }

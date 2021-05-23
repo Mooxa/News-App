@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct NewsViewModel {
+class NewsViewModel: ObservableObject  {
     let news = Bundle.main.decode([News].self, from: "news.json")
+
+    @Published var selectedItem: News? = nil
 
 }

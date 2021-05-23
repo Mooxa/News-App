@@ -58,11 +58,43 @@ struct RemoteImage: View {
         case .failure:
             return failure
         default:
+            
+            #if os(iOS)
             if let image = UIImage(data: loader.data) {
                 return Image(uiImage: image)
             } else {
                 return failure
             }
+            #else
+            if let image = UIImage(data: loader.data) {
+                return Image(nsImage: image)
+            } else {
+                return failure
+            }
+            #endif
+            
         }
     }
 }
+
+#if os(macOS)
+// Step 1: Typealias UIImage to NSImage
+typealias UIImage = NSImage
+
+// Step 2: You might want to add these APIs that UIImage has but NSImage doesn't.
+extension NSImage {
+    var cgImage: CGImage? {
+        var proposedRect = CGRect(origin: .zero, size: size)
+
+        return cgImage(forProposedRect: &proposedRect,
+                       context: nil,
+                       hints: nil)
+    }
+
+    convenience init?(named name: String) {
+        self.init(named: Name(name))
+    }
+}
+#endif
+
+
