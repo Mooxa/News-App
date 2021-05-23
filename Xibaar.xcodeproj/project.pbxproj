@@ -132,6 +132,7 @@
 		315C961B26580D4F00001B5C /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				315C96572659464B00001B5C /* Presentation */,
 				315C961C26580D4F00001B5C /* Info.plist */,
 			);
 			path = iOS;
@@ -157,7 +158,6 @@
 		315C963A2658280900001B5C /* Xibaar */ = {
 			isa = PBXGroup;
 			children = (
-				315C96572659464B00001B5C /* Presentation */,
 				315C964D265942FD00001B5C /* Data */,
 				315C963D2658286C00001B5C /* Domain */,
 			);
