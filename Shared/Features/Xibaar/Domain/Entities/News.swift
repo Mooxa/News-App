@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct News: Codable, Identifiable  {
+struct News: Codable, Identifiable , Hashable {
     var id: String
     var title: String
     var photo: String
@@ -23,14 +23,14 @@ struct News: Codable, Identifiable  {
     #endif
 }
 
-struct Comment: Codable, Identifiable  {
+struct Comment: Codable, Identifiable , Hashable {
     var id: String
     var comment: String
     var publishDate: String
     var user: User
 }
 
-struct User:  Codable, Identifiable {
+struct User:  Codable, Identifiable , Hashable{
     var id: String
     var firstName: String
     var lastName: String
