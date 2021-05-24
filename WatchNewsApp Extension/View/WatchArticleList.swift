@@ -10,13 +10,17 @@ import SwiftUI
 struct WatchArticleList: View {
     @EnvironmentObject var viewModel:  NewsViewModel
     var body: some View {
-        ScrollView(.horizontal) {
-            LazyHStack {
-                ForEach(viewModel.news, id: \.self) { article in
+        NavigationView{
+            List(viewModel.news, id: \.self) { article in
+                NavigationLink(destination: WatchArticleDetailView(new: article)) {
+                    // existing contents…
                     WatchArticleRow(new: article)
                 }
+                
             }
+            .navigationBarTitle(Text("News App"))
         }
+        
     }
 }
 

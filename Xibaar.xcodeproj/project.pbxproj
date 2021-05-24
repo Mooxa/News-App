@@ -50,7 +50,6 @@
 		3160C45A265AF33600E0778F /* CommentRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C966C2659C6FA00001B5C /* CommentRowView.swift */; };
 		3160C460265B138000E0778F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3160C45F265B138000E0778F /* Assets.xcassets */; };
 		3160C467265B138100E0778F /* WatchNewsApp Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3160C466265B138100E0778F /* WatchNewsApp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		3160C46C265B138100E0778F /* XibaarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3160C46B265B138100E0778F /* XibaarApp.swift */; };
 		3160C46E265B138100E0778F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3160C46D265B138100E0778F /* ContentView.swift */; };
 		3160C470265B138100E0778F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3160C46F265B138100E0778F /* NotificationController.swift */; };
 		3160C472265B138100E0778F /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3160C471265B138100E0778F /* NotificationView.swift */; };
@@ -64,6 +63,9 @@
 		3160C48C265BD5AE00E0778F /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3160C44D265ACC9C00E0778F /* Extension.swift */; };
 		3160C48D265BD67D00E0778F /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C966326598B5800001B5C /* RemoteImage.swift */; };
 		3160C48F265BD89700E0778F /* WatchArticleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3160C48E265BD89700E0778F /* WatchArticleList.swift */; };
+		3160C490265BDF2500E0778F /* XibaarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C961226580D4D00001B5C /* XibaarApp.swift */; };
+		3160C491265BDF5700E0778F /* news.json in Resources */ = {isa = PBXBuildFile; fileRef = 315C96362658216B00001B5C /* news.json */; };
+		3160C494265BE46C00E0778F /* WatchArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3160C493265BE46C00E0778F /* WatchArticleDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,7 +146,6 @@
 		3160C45F265B138000E0778F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3160C461265B138000E0778F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3160C466265B138100E0778F /* WatchNewsApp Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchNewsApp Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3160C46B265B138100E0778F /* XibaarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibaarApp.swift; sourceTree = "<group>"; };
 		3160C46D265B138100E0778F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3160C46F265B138100E0778F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		3160C471265B138100E0778F /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
@@ -155,6 +156,7 @@
 		3160C47B265B138300E0778F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		3160C488265BD51C00E0778F /* WatchArticleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchArticleRow.swift; sourceTree = "<group>"; };
 		3160C48E265BD89700E0778F /* WatchArticleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchArticleList.swift; sourceTree = "<group>"; };
+		3160C493265BE46C00E0778F /* WatchArticleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchArticleDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -396,7 +398,6 @@
 			isa = PBXGroup;
 			children = (
 				3160C487265BD4E600E0778F /* View */,
-				3160C46B265B138100E0778F /* XibaarApp.swift */,
 				3160C46D265B138100E0778F /* ContentView.swift */,
 				3160C46F265B138100E0778F /* NotificationController.swift */,
 				3160C471265B138100E0778F /* NotificationView.swift */,
@@ -422,6 +423,7 @@
 			children = (
 				3160C488265BD51C00E0778F /* WatchArticleRow.swift */,
 				3160C48E265BD89700E0778F /* WatchArticleList.swift */,
+				3160C493265BE46C00E0778F /* WatchArticleDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -574,6 +576,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3160C491265BDF5700E0778F /* news.json in Resources */,
 				3160C479265B138300E0778F /* Preview Assets.xcassets in Resources */,
 				3160C476265B138300E0778F /* Assets.xcassets in Resources */,
 			);
@@ -644,9 +647,10 @@
 				3160C46E265B138100E0778F /* ContentView.swift in Sources */,
 				3160C474265B138100E0778F /* ComplicationController.swift in Sources */,
 				3160C48A265BD58400E0778F /* News.swift in Sources */,
-				3160C46C265B138100E0778F /* XibaarApp.swift in Sources */,
+				3160C494265BE46C00E0778F /* WatchArticleDetailView.swift in Sources */,
 				3160C472265B138100E0778F /* NotificationView.swift in Sources */,
 				3160C48F265BD89700E0778F /* WatchArticleList.swift in Sources */,
+				3160C490265BDF2500E0778F /* XibaarApp.swift in Sources */,
 				3160C48B265BD58C00E0778F /* NewsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

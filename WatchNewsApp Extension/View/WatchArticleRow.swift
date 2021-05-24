@@ -11,13 +11,12 @@ struct WatchArticleRow: View {
     @EnvironmentObject var viewModel:  NewsViewModel
     let new: News
     var body: some View {
-        VStack(alignment: .center, spacing: 8){
+        HStack(alignment: .center, spacing: 8){
             RemoteImage(url: new.photo)
                 .clipShape(Circle())
                 .shadow(radius: 10)
                 .overlay(Circle().stroke(Color.white, lineWidth: 5))
-                .frame(width: 100, height: 100)
-            
+                .frame(width: 50, height: 50)
             Text(new.title)
                 .font(.caption)
                 .multilineTextAlignment(.center)
