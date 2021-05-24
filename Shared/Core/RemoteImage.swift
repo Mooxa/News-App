@@ -59,15 +59,15 @@ struct RemoteImage: View {
             return failure
         default:
             
-            #if os(iOS)
+            #if os(macOS)
             if let image = UIImage(data: loader.data) {
-                return Image(uiImage: image)
+                return Image(nsImage: image)
             } else {
                 return failure
             }
             #else
             if let image = UIImage(data: loader.data) {
-                return Image(nsImage: image)
+                return Image(uiImage: image)
             } else {
                 return failure
             }
