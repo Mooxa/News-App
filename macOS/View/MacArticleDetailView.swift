@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MacArticleDetail: View {
+struct MacArticleDetailView: View {
     
     let new: News
     
@@ -34,6 +34,6 @@ struct MacArticleDetail: View {
 
 struct MacArticleDetail_Previews: PreviewProvider {
     static var previews: some View {
-        MacArticleDetail(new: News.example)
+        MacArticleDetailView(new: News.example)
     }
 }

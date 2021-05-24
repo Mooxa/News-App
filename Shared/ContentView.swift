@@ -34,7 +34,7 @@ struct ContentView: View {
                        .keyboardShortcut("S", modifiers: .command)
                      }
                    }
-            MacArticleDetail(new: viewModel.selectedItem ?? News.example)
+            MacArticleDetailView(new: viewModel.selectedItem ?? News.example)
             
             MacCommentView(new: viewModel.selectedItem ?? News.example)
              }

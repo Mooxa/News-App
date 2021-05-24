@@ -15,7 +15,7 @@ struct NewsListView: View {
                 ForEach(viewModel.news) { article in
                     NavigationLink(destination: ArticleDetailView(new: article)) {
                         // existing contents…
-                        NewsRowView(new: article)
+                        ArticleRowView(new: article)
                     }
                     
                 }

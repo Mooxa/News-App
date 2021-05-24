@@ -11,7 +11,7 @@ struct Sidebar: View {
     @EnvironmentObject var viewModel:  NewsViewModel
   var body: some View {
     List(viewModel.news, id: \.self, selection: $viewModel.selectedItem) { article in
-        NewsRowView(new: article)
+        ArticleRowView(new: article)
     }
   }
 }

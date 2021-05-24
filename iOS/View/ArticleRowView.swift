@@ -1,5 +1,5 @@
 //
-//  NewsRowView.swift
+//  ArticleRowView.swift
 //  Xibaar
 //
 //  Created by Mouhamed Dieye on 22/05/2021.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NewsRowView: View {
+struct ArticleRowView: View {
     let new: News
     var body: some View {
         HStack {
@@ -38,6 +38,6 @@ struct NewsRowView: View {
 
 struct NewsRowView_Previews: PreviewProvider {
     static var previews: some View {
-        NewsRowView(new: News.example)
+        ArticleRowView(new: News.example)
     }
 }
