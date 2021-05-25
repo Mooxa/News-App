@@ -19,17 +19,15 @@ struct MacCommentView: View {
                 .frame(maxWidth: .infinity, alignment: .center)
             
             
-            List {
-                ForEach(new.comments) { comment in
-                    CommentRowView(comment: comment)
-                }
-            }
+//            List {
+//                ForEach(new.comments) { comment in
+//                    CommentRowView(comment: comment)
+//                }
+//            }
             HStack {
                 Image("demon-slayer-thumb")
-                    .scaledToFit()
                     .frame(width: 50, height: 50)
                     .clipShape(Circle())
-                    .overlay(Circle().stroke(Color.gray, lineWidth: 2))
                 
                 TextField("Please enter", text: $name)
                     .frame(height: 70)

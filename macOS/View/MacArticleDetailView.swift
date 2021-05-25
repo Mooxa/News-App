@@ -10,6 +10,7 @@ import SwiftUI
 struct MacArticleDetailView: View {
     
     let new: News
+
     
     var body: some View {
         VStack{

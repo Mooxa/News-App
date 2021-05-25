@@ -46,16 +46,7 @@ struct WebViewContent: View {
 
                              }
                          )
-//                 .navigationBarItems(trailing:
-//                     Button("Last Page") {
-//                         self.webViewStateModel.goBack.toggle()
-//                     }.disabled(!webViewStateModel.canGoBack)
-//                 )
-//                 .navigationBarItems(leading:
-//                     Button("Last Page") {
-//                         self.webViewStateModel.goBack.toggle()
-//                     }.disabled(!webViewStateModel.canGoBack)
-//                 )
+
              
           }
              

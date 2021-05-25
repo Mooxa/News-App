@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct WatchArticleRow: View {
-    @EnvironmentObject var viewModel:  NewsViewModel
     let new: News
     var body: some View {
         HStack(alignment: .center, spacing: 8){
