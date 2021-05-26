@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3155F8CB265D9C6E00A4A705 /* MacArticleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3155F8CA265D9C6E00A4A705 /* MacArticleListView.swift */; };
+		3155F8CD265D9E8700A4A705 /* MacFavoritesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3155F8CC265D9E8700A4A705 /* MacFavoritesListView.swift */; };
+		3155F8CE265DC71E00A4A705 /* CommentRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C966C2659C6FA00001B5C /* CommentRowView.swift */; };
 		315C962526580D4F00001B5C /* XibaarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C961226580D4D00001B5C /* XibaarApp.swift */; };
 		315C962626580D4F00001B5C /* XibaarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C961226580D4D00001B5C /* XibaarApp.swift */; };
 		315C962726580D4F00001B5C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C961326580D4D00001B5C /* ContentView.swift */; };
@@ -41,7 +44,6 @@
 		3160C44C265ACC2500E0778F /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C966626598E1F00001B5C /* NewsViewModel.swift */; };
 		3160C44E265ACC9C00E0778F /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3160C44D265ACC9C00E0778F /* Extension.swift */; };
 		3160C44F265ACCB200E0778F /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3160C44D265ACC9C00E0778F /* Extension.swift */; };
-		3160C451265ACD2F00E0778F /* ArticleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C965A26594E3800001B5C /* ArticleRowView.swift */; };
 		3160C452265ACD3D00E0778F /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C966326598B5800001B5C /* RemoteImage.swift */; };
 		3160C454265ACF0D00E0778F /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3160C453265ACF0D00E0778F /* Sidebar.swift */; };
 		3160C457265AEB1200E0778F /* MacArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3160C456265AEB1200E0778F /* MacArticleDetailView.swift */; };
@@ -110,6 +112,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3155F8CA265D9C6E00A4A705 /* MacArticleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacArticleListView.swift; sourceTree = "<group>"; };
+		3155F8CC265D9E8700A4A705 /* MacFavoritesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacFavoritesListView.swift; sourceTree = "<group>"; };
 		315C961226580D4D00001B5C /* XibaarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibaarApp.swift; sourceTree = "<group>"; };
 		315C961326580D4D00001B5C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		315C961426580D4F00001B5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -380,6 +384,8 @@
 				3160C456265AEB1200E0778F /* MacArticleDetailView.swift */,
 				3160C458265AF2C300E0778F /* MacCommentView.swift */,
 				3160C495265C749D00E0778F /* MacArticleRowView.swift */,
+				3155F8CA265D9C6E00A4A705 /* MacArticleListView.swift */,
+				3155F8CC265D9E8700A4A705 /* MacFavoritesListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -624,13 +630,15 @@
 				3160C44E265ACC9C00E0778F /* Extension.swift in Sources */,
 				315C96402658289600001B5C /* News.swift in Sources */,
 				3160C457265AEB1200E0778F /* MacArticleDetailView.swift in Sources */,
+				3155F8CE265DC71E00A4A705 /* CommentRowView.swift in Sources */,
 				315C964C2659427200001B5C /* GetNewsListUseCase.swift in Sources */,
 				3160C452265ACD3D00E0778F /* RemoteImage.swift in Sources */,
 				3160C44C265ACC2500E0778F /* NewsViewModel.swift in Sources */,
 				315C962826580D4F00001B5C /* ContentView.swift in Sources */,
-				3160C451265ACD2F00E0778F /* ArticleRowView.swift in Sources */,
+				3155F8CD265D9E8700A4A705 /* MacFavoritesListView.swift in Sources */,
 				3160C459265AF2C300E0778F /* MacCommentView.swift in Sources */,
 				315C962626580D4F00001B5C /* XibaarApp.swift in Sources */,
+				3155F8CB265D9C6E00A4A705 /* MacArticleListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

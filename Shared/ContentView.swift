@@ -15,25 +15,10 @@ struct ContentView: View {
     }
     #else
     var body: some View {
-        NavigationView {
             Sidebar()
-                .toolbar {
-                    ToolbarItem(placement: .automatic) {
-                        Button(action: {
-                            NSApp.keyWindow?.firstResponder?.tryToPerform(#selector(NSSplitViewController.toggleSidebar(_:)), with: nil)
-                        }) {
-                            Image(systemName: "sidebar.left")
-                        }
-                        .keyboardShortcut("S", modifiers: .command)
-                    }
-                }
-            MacArticleDetailView(new: viewModel.selectedItem ?? News.example)
-                .environmentObject(self.viewModel)
-          MacCommentView(new: viewModel.selectedItem ?? News.example)
-            .environmentObject(self.viewModel)
-        }
-        .navigationTitle("News App")
     }
+        
+    
     #endif
 }
 

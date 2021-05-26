@@ -16,7 +16,7 @@ struct ArticleDetailView: View {
     var body: some View {
         NavigationView {
             VStack {
-                ScrollView{
+                ScrollView {
                     ZStack(alignment: .bottomTrailing){
                         RemoteImage(url: new.photo)
                         Text(new.title)

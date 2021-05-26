@@ -12,26 +12,26 @@ struct MacArticleRowView: View {
     var body: some View {
         HStack {
             RemoteImage(url: new.photo)
-                     .scaledToFill()
-                     .frame(width: 100, height: 120)
-                     .clipped()
-                     .cornerRadius(12)
-                 
-                 
-                 VStack(alignment: .leading, spacing: 8) {
-                     Text(new.title)
-                         .font(.headline)
-                     
-                     Text(new.article)
-                         .font(.subheadline)
-                         .opacity(0.7)
-                         .lineLimit(2)
-
-                     Text("Mooxalinsky")
-                         .font(.system(size: 13, weight: .medium, design: .rounded))
-                         .multilineTextAlignment(.leading)
-                 }
-             }
+                .scaledToFill()
+                .frame(width: 100, height: 120)
+                .clipped()
+                .cornerRadius(12)
+            
+            VStack(alignment: .leading, spacing: 8) {
+                Text(new.title)
+                    .font(.headline)
+                
+                Text(new.article)
+                    .font(.subheadline)
+                    .opacity(0.7)
+                    .lineLimit(2)
+                
+                Text("Mooxalinsky")
+                    .font(.system(size: 13, weight: .medium, design: .rounded))
+                    .multilineTextAlignment(.leading)
+            }
+        }
+        .frame(height: 120)
         .padding()
     }
 }
