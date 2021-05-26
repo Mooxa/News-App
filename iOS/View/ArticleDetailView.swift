@@ -14,7 +14,7 @@ struct ArticleDetailView: View {
     @State var showSheetView = false
     
     var body: some View {
-        NavigationView {
+//        NavigationView {
             VStack {
                 ScrollView {
                     ZStack(alignment: .bottomTrailing){
@@ -59,18 +59,9 @@ struct ArticleDetailView: View {
                 }
                 .padding(8)
                 .background(Color.gray)
-            }
-            .navigationBarTitle(Text("Detail"), displayMode: .inline)
-            .navigationBarItems(trailing:
-                                    HStack {
-                                        Button(action: {
-                                            self.showSheetView = false
-                                        }) {
-                                            Text("Done")
-                                        }
-                                        
-                                    }
-            )
+//            }
+
+            
         }
     }
 }
